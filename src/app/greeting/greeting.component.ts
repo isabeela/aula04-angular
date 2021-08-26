@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./greeting.component.css']
 })
 export class GreetingComponent implements OnInit {
+  name = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  timestamp = new Date();
+  getHour() {
+    return this.timestamp.getHours();
   }
-
 }
