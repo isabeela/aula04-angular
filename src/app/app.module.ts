@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { HelloComponent } from './hello.component';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
