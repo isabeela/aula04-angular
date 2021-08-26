@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { MultTableComponent } from './mult-table/mult-table.component';
 import { HelloComponent } from './hello.component';
 
 import { RouterModule } from '@angular/router';
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'greeting', component: GreetingComponent }
+      { path: 'greeting', component: GreetingComponent },
+      { path: 'mult-table', component: MultTableComponent }
     ])
   ],
   declarations: [
@@ -24,7 +26,8 @@ import { RouterModule } from '@angular/router';
     HelloComponent,
     NavbarComponent,
     HomeComponent,
-    GreetingComponent
+    GreetingComponent,
+    MultTableComponent
   ],
   bootstrap: [AppComponent]
 })
