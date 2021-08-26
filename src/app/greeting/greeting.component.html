@@ -6,19 +6,19 @@
   <input class="form-control" type="text" [(ngModel)]="name">
   <hr />
   <h2> Saudação </h2>
-  <div *ngIf="isMorning()">
-    Bom dia
+  <div *ngIf="isMorning() && name">
+    Bom dia {{name}} :)
   </div>
 
-  <div *ngIf="isAfternoon()">
-    Bom Tarde
+  <div *ngIf="isAfternoon() && name">
+    Bom Tarde {{name}} o/
   </div>
 
   <div *ngIf="isNight() && name">
     Boa noite {{name}} s2
   </div>
 
-  <div *ngIf="isDawn()">
-    Vai dormir!!!
+  <div *ngIf="isDawn() && name">
+    Vai dormir!!! {{name}} >:(
   </div>
 </div>
