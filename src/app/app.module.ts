@@ -11,7 +11,14 @@ import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'greeting', component: GreetingComponent }
+    ])
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
