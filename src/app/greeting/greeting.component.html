@@ -1,10 +1,24 @@
 <div class="container-fluid">
   <h1> Saudação </h1>
-  <h2> Data/Hora </h2>
-  <div> {{timestamp}} </div>
-  <div> São {{getHour()}} hras </div>
+  <h2> Horário </h2>
+  <div> {{getHour()}} horas </div>
   <h2> Identificação </h2>
-  <input class="form-control" type="text">
+  <input class="form-control" type="text" [(ngModel)]="name">
   <hr />
   <h2> Saudação </h2>
+  <div *ngIf="isMorning()">
+    Bom dia
+  </div>
+
+  <div *ngIf="isAfternoon()">
+    Bom Tarde
+  </div>
+
+  <div *ngIf="isNight() && name">
+    Boa noite {{name}} s2
+  </div>
+
+  <div *ngIf="isDawn()">
+    Vai dormir!!!
+  </div>
 </div>
